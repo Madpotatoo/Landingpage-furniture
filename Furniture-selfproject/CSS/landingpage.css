@@ -1,0 +1,54 @@
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    position: relative;
+}
+
+.Item-title{
+    width: 690px;
+    text-align: center;
+}
+
+.Item-title h1{
+    font-size: var(--font-size-heading);
+    color: var(--third-color);
+    word-spacing: 3px;
+    font-weight: 700;
+}
+
+.landingpage-image-container img{
+    width: 670px;
+}
+
+.item-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-name{
+    font-size: var(--font-size-medium);
+    color: rgb(51, 61, 76);
+    font-weight: 400;
+
+}
+
+.item-price{
+    color: var(--third-color);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.item-information button{
+    font-size: 17px;
+    margin-top: 13px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    background-color:rgb(34, 41, 52);
+}

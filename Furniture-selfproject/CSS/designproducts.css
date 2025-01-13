@@ -1,0 +1,91 @@
+.Interior-design-and-inspiration{
+    background-color: #ffffff;
+}
+
+.Interior-Title{
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.Interior-Title h1{
+    font-size: 22px;
+    color: var(--third-color);
+}
+
+.Category{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    column-gap: 20px;
+}
+
+.Category h1{
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+}
+
+.livingroom{
+    border: 1px solid var(--third-color);
+    padding: 9px 15px;
+    border-radius: 25px;
+}
+
+.bedroom, .kitchen, .decoration, .office{
+    border: 1px solid rgb(224, 229, 235);
+    padding: 9px 15px;
+    border-radius: 25px;
+    transition: border 0.15s ease;
+}
+
+.bedroom:hover, .kitchen:hover, .decoration:hover, .office:hover{
+    border: 1px solid var(--third-color);
+}
+
+/*IMAGE MASONRY*/
+.masonry-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    gap: 16px;
+    padding: 30px 50px 0 50px;
+}
+
+.child-masonry img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/*OFFER-PRODUCT*/
+.we-offer{
+    padding: 70px 50px 0 50px;
+    background-color: #ffffff;
+}
+
+.offer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-container, .second-container,.third-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.offer-container img{
+    width: 70px;
+}
+
+.offer-container h1{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.offer-container p{
+    font-size: var(--font-size-medium);
+    color: rgb(78, 85, 98);
+    text-align: center;
+    width: 280px;
+}

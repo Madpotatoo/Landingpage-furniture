@@ -1,0 +1,97 @@
+.half-card{
+    padding: 80px 50px 0 50px;
+    background-color: #ffffff;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.f-card{
+    position: relative;
+    flex: 1;
+    background-color: rgb(214, 216, 218);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.f-card img{
+    width: 100%;
+}
+
+.button{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    left: 30px;
+    bottom: 30px;
+}
+
+.button img{
+  width: 20px;
+  margin-right: 5px;
+}
+
+.button h1{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.s-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex: 1;
+    background-color: rgb(34, 41, 52);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.s-card p{
+    color: rgb(202, 208, 217);
+    font-size: var(--font-size-medium);
+}
+
+.item-description{
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    width: 370px;
+}
+
+
+.s-card img{
+    width: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card-price-item{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.s-card button{
+    background-color: rgb(34, 41, 52);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 17px;
+    border-radius: 25px;
+    transition: background-color 0.15s,
+    color 0.15s;
+}
+
+.s-card button:hover{
+    background-color: #ffffff;
+    color: rgb(34, 41, 52);
+    border: none;
+}
+

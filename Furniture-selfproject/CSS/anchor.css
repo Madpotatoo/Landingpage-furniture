@@ -1,0 +1,27 @@
+.anchor-top{
+    position: absolute;
+    position: fixed;
+    right: 80px;
+    bottom: 150px;
+    z-index: 5;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease; 
+}
+
+.anchor-button{
+   border-radius: 50%;
+   border: solid 2px rgb(0, 0, 0);
+   background-color: var(--secondary-color);
+   cursor: pointer;
+}
+.anchor-button img{
+    width: 50px;
+    padding: 10px;
+}
+
+/* Show the button when scrolling */
+.anchor-top.show {
+    opacity: 1;
+}
+
+

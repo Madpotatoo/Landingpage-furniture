@@ -1,0 +1,20 @@
+:root{
+    --primary-color:rgb(245, 247, 250); /*Background-color*/
+    --secondary-color: rgb(78, 85, 98); /*color*/
+    --third-color:rgb(24, 29, 37);
+
+    --font-size-heading: 58px;
+    --font-size-large: 36px;
+    --font-size-medium: 16px;
+    --font-size-small: 12px; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+body{
+    background-color: var( --primary-color);
+}

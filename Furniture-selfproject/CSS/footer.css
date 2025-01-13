@@ -1,0 +1,148 @@
+.footer{
+    background-color: rgb(34, 41, 52);
+    height: 370px;
+    padding: 92px 50px 0 50px;
+}
+
+.footer-parent{
+    display: grid;
+    grid-template-columns: 220px 2fr 220px;
+    gap: 10px;
+}
+
+.footer-child-first-card, .footer-child-third-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-child-first-card h1, .footer-child-third-card h1{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer-child-second-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-child-second-card{
+    color: #ffffff;
+}
+
+.stay-text{
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.promotion-text{
+    font-size: 14px;
+    color: rgb(202, 208, 217);
+}
+
+.email-input{
+    margin-top: 17px;
+    position: relative;
+}
+
+input[type="email"]{
+    font-size: 17px;
+    color: #ffffff;
+    width: 490px;
+    padding: 13px 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid rgb(78, 85, 98);
+}
+
+input[type="email"]::placeholder{
+    color: rgb(78, 85, 98);
+    padding-left: 5px;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; /* Arrow color */
+    font-size: 18px;
+    pointer-events: none;
+}
+
+/* TOOL TIP */
+
+.icon-container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+}
+
+.icon-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    position: relative;
+    width: 100%;
+}
+
+.icon-image img{
+    height: 22px;
+    width: 22px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #998a8a;
+}
+
+.watermark{
+    padding-top: 45px;
+}
+
+.watermark h1{
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    color: #ccc;
+}
+
+.watermark span{
+    color: #ffffff;
+    margin-left: -5px;
+    font-weight: 400;
+}
+
+.tool-tip{
+    font-size: 13px;
+    position: absolute;
+    top: 20%;
+    left: 12px;
+    display: none;
+}
+
+.icon-image img:hover + .tool-tip{
+    display: block;
+}
+
+/*
+Explanation:
+Tooltip Hidden by Default:
+
+The .tool-tip uses display: none initially so it won't appear until triggered.
+Hover on the Image:
+
+The img:hover + .tool-tip selector targets the .tool-tip element that is immediately sibling to the img element.
+This ensures the tooltip is only displayed when hovering directly over the img.
+Positioning:
+
+You can use position: absolute to position the tooltip relative to the .icon-image container (make sure the container has position: relative for proper alignment).
+Result:
+When you hover over the image (img), the tooltip (.tool-tip) will appear. Hovering outside the image (but inside the .icon-image container) won't trigger the tooltip.
+
+Let me know if you'd like help with additional styling, like animations or positioning! 😊
+*/
+
+

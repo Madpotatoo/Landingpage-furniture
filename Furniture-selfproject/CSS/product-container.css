@@ -1,0 +1,201 @@
+.product-images-container{
+    margin-top: 70px;
+    padding: 80px 70px 0 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.product-thumbnail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.product-thumbnail img{
+    width: 170px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-thumbnail h1{
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    color: var(--third-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-container{
+    position: absolute;
+    bottom: -5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dropdown-container h3{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+    transition: text-decoration 0.15s ease;
+    cursor:pointer;
+}
+
+/*HOVER EFFECTS*/
+.product-thumbnail:hover img{
+    transform: scale(0.7) translateY(-50%);
+}
+
+.product-thumbnail:hover h1{
+    transform: translateY(-400%);
+}
+
+
+.product-thumbnail:hover .dropdown-container{
+    transform: translateY(-150%);
+    opacity: 1;
+}
+
+.dropdown-container h3:hover{
+    text-decoration: underline;
+}
+
+/*POPULAR PRODUCT-SECTION*/
+.popular-products{
+    color: var(--third-color);
+    background-color: #ffffff;
+    padding: 110px 50px 0 50px;
+}
+
+.Product-Top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(167, 166, 166, 0.315);
+}
+
+.Product-popular{
+    font-size: 22px;
+}
+
+.view{
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+}
+
+/*PRODUCT-CATEGORY*/
+
+.product-category{
+    color: var(--third-color);
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 10px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.product-bedframe, .product-bluearmchair, .product-lofy, .product-armchair{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-bedframe .bed-frame, .product-bluearmchair .blue-armchair, .product-lofy .lofy, .product-armchair .armchair{
+    width: 240px;
+    height: 250px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.hover-bedframe, .hover-armchair, .hover-lofy, .wooden-armchair{
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    cursor: pointer;
+}
+
+.hover-bedframe:hover, .hover-armchair:hover, .hover-lofy:hover, .wooden-armchair:hover{
+    opacity: 1;
+    border-radius: 10px;
+}
+
+/*PRODUCT-CATEGORY*/
+.radio-button{
+    padding-top: 5px;
+}
+
+.product-description{
+    font-size: var(--font-size-medium);
+    font-weight: 450;
+}
+
+.product-price{
+    font-size: var(--font-size-medium);
+}
+
+/*BUTTON CONTAINER*/
+.add-cart-container{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Add-to-cart{
+    padding: 9px 0 9px ;
+    width: 18em;
+    border-radius: 25px;
+    background-color:rgb(34, 41, 52);
+    border: none;
+    color: #ffffff;
+    font-size: var(--font-size-medium);
+    margin-right: 10px;
+}
+
+.heart-container{
+    background-color: rgb(214, 216, 218);
+    padding: 10px 10px 7px 10px;
+    border-radius: 50%;
+}
+
+.heart-container img{
+    width: 12px;
+}
+
+/*discount*/
+.discount{
+    background-color: rgb(240, 61, 61);
+    position: absolute;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    top: 10px;
+    left: 30px;
+}

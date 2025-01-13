@@ -1,0 +1,148 @@
+/*info-above-navigation*/
+.info-above-navigation{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px 0 60px;
+
+}
+
+.contact-no{
+    display: flex;
+    font-size: var(--font-size-small);
+    color: var(--secondary-color);
+}
+
+span{
+    color: #000000;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding-left: 5px;
+}
+
+.sale{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: var(--font-size-small);
+    color: var(--secondary-color);
+    padding-left: 50px;
+}
+
+.account-wishlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    width: 200px;
+}
+
+.account-wishlist h1{
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+
+/*info-above-navigation*/
+
+/*NAVIGATION*/
+.navigation-container{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-container.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navigation-container.new-radius .container {
+    border-radius: 10px;
+    margin-top: 0;
+}
+/*FOR SCROLLING THE NAVIGATION*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    margin-top: 17px;
+    padding: 10px 0;
+    width: 92%;
+    border-radius: 40px;
+    transition: border-radius 0.3s ease, margin-top 0.3s ease;
+}
+
+.navigation-bar-category{
+    position: relative;
+}
+
+/*FOR HOVERING LINE EFFECT*/
+.navigation-bar-category::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: black;
+    height: 2px;
+    bottom: -7px;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navigation-bar-category:hover::after{
+    width: 100%;
+}
+/*FOR HOVERING LINE EFFECT*/
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-large);
+    padding-left: 25px;
+    font-weight: 600;
+    width: 200px;
+    color: var(--third-color);
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.navigation h1{
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding-right: 13px;
+    width: 200px;
+}
+
+.icon-container img{
+    height: 17px;
+}
+/*NAVIGATION*/
+
+.search-icon{
+    padding: 10px 12px;
+    background-color: #7775751c;
+    border-radius: 100%;
+}
+
+
